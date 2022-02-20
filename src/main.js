@@ -6,12 +6,10 @@ import App from './App.vue'
 //element-ui 引入
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-//引入路由
+//引入VueRouter
 import VueRouter from 'vue-router';
-
-// 全局混合
-//import {mixin} from './mixin'
-//Vue.mixin(mixin)
+//引入路由
+import router from './router/index';
 
 //引入axios
 // import axios from 'axios'
@@ -36,4 +34,5 @@ new Vue({
     // 全局事件总线
     Vue.prototype.$bus = this;
   },
+  router:router,
 }).$mount('#app')

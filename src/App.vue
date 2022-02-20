@@ -1,16 +1,16 @@
 <!--APP:一人之下万人之上-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <div>
+    <!-- <div>
       <input type="text" name="text" id="t"><button @click="getAxios">点击向服务器发送消息</button>
-    </div>
+    </div> -->
     <!-- <MyHeader @addTodo="addTodo"/>
     <TodoList :todos="todos"/>
     <DoneList :todos="todos" :dones="dones" :deleteTodo="deleteTodo"/>
     <MyFooter /> -->
-    <ElementStudy/>
+    <ElementUi/>
   </div>
 </template>
 
@@ -21,7 +21,7 @@
 // import MyFooter from "./components/MyFooter.vue"
 // import TodoList from "./components/TodoList.vue"
 // import DoneList from './components/DoneList.vue'
-import ElementStudy from './components/ElementUi.vue'
+import ElementUi from './components/ElementUi.vue'
 
 import axios from 'axios'
 
@@ -34,7 +34,7 @@ export default {
     // MyFooter,
     // TodoList,
     // DoneList,
-    ElementStudy,
+    ElementUi,
   },
   data() {
     return {
@@ -96,20 +96,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.edit-button{
-  float:right;
-  border-width: 3px;
-  padding: 1px;
-  background-color: blue;
-  color: white;
-  margin-right: 5px;
-}
+
 </style>
