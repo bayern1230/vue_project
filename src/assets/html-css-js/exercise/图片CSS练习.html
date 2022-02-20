@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习1</title>
+    <style>
+        #root {
+            margin: 30px auto;
+            width: 200px;
+            padding: 30px 20px;
+            /* 设置文本居中——即按钮 */
+            text-align: center;
+            background-color: greenyellow;
+        }
+
+        /* 设置ul样式 */
+        ul.img-list {
+            padding: 0px;
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+        }
+
+        /* 图片样式 */
+        ul.img-list img {
+            width: 100%;
+        }
+
+        /* 表单样式 */
+        li {
+            list-style: none;
+            margin-bottom: 9px;
+        }
+
+        /* 按钮样式 */
+
+        #pre_button,
+        #next_button {
+            color: black;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            // 点击按钮切换图片
+            var pre_button = document.getElementById("pre_button");//上一张按钮元素
+            var img = document.getElementsByTagName("img")[0];//图片元素
+            //数组存储图片路径
+            var src_list = ['./picture/1.png', './picture/2.jpg', './picture/3.png'];
+            // 图片下标
+            var index = 0;
+            // 图片初始链接
+            img.src = src_list[index]
+            //执行上一张功能
+            pre_button.onclick = function () {
+                for (i = 0; i < src_list.length; i++) {
+                    //找到当前图片的下标
+                    if (img.src == src_list[i]) {
+                        index = i;
+                        break;
+                    }
+                }
+                //改变下标 
+                if (index == 0) {
+                    index = src_list.length - 1;
+                }
+                else {
+                    index--;
+                }
+                //切换图片
+                img.src = src_list[index];
+            };
+            var next_button = document.getElementById("next_button");
+        };
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <ul class="img-list">
+            <li><a href="https://www.JD.com" target="_blank"><img ></a></li>
+            <li><a href="https://www.JD.com" target="_blank"><img src="./picture/2.jpg"></a></li>
+            <li><a href="https://www.JD.com" target="_blank"><img src="./picture/3.png"></a></li>
+        </ul>
+        <!-- 图片翻页按钮 -->
+        <div class="buttons">
+            <button id="pre_button">上一张</button>
+            <button id="next_button">下一张</button>
+        </div>
+    </div>
+</body>
+
+</html>

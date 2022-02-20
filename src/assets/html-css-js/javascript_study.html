@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        window.addEventListener('resize',function(){
+            console.log("浏览器窗口发生变化")
+        })*/
+
+
+    </script>
+    <style>
+        /* 倒计时 */
+        div.倒计时 {
+            margin: 0 auto;
+            height: 100px;
+            width: 1000px;
+        }
+
+        span.倒计时 {
+            width: 50px;
+            height: 100%;
+            padding: 10px;
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>alert("hello") -- 弹窗</p>
+    <p>document.write("写入内容")</p>
+    <p>console.log("向控制台中写入内容")</p>
+    <h2>JS代码写入位置</h2>
+    <p>button 按钮的onclick=""中</p>
+    <p>href="javascript:"中</p>
+    <h2>变量与字面量</h2>
+    <p>声明：var a;</p>
+    <h2>DOM</h2>
+    <p>通过ID查找元素：document.getElementById("id")</p>
+    <p>获取元素内部代码:innerHTML</p>
+    <h2>图片翻页</h2>
+    <h2>BOM</h2>
+    <p> 当浏览器窗口大小发生变化执行函数<br>
+        window.addEventListener('resize',function(){
+        console.log("浏览器窗口发生变化")
+        })</p>
+    <p>window.innerWidth:屏幕的当前尺寸</p>
+    <h2>定时器</h2>
+    <p>window.setTimeout(调用函数,延时时间(ms))</p>
+    <p>清除定时器</p>
+    <button id="button_1">点我停止计时</button>
+    <script>
+        var timeout_1 = window.setTimeout(function () { console.log("爆炸了") }, 2000);
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function () {
+            clearTimeout(timeout_1);
+            console.log("爆炸已经停止");
+        });
+
+    </script>
+    <p>setInterval():每隔一段时间就调用该函数</p>
+    <h2>倒计时效果</h2>
+    <div class="倒计时">
+        <span id="倒计时_hour" class="倒计时">1</span>
+        <span id="倒计时_min" class="倒计时">2</span>
+        <span id="倒计时_sec" class="倒计时">3</span>
+    </div>
+    <script>
+        // 1.获取元素
+        let hour = document.querySelector('#倒计时_hour')
+        let min = document.querySelector('#倒计时_min')
+        let sec = document.querySelector('#倒计时_sec')
+        //2.等待补充
+    </script>
+    <h2>发送短信案例</h2>
+    <div>
+        <span>手机号：<input type="number"><button id="短信_btn">发送</button></span>
+    </div>
+    <script>
+        //点击之后禁用按钮
+        var btn = document.getElementById('短信_btn');
+        btn.onclick = function () {
+            btn.disabled = true;
+            var s = 3;
+            btn.innerHTML = '还剩' + String(s) + '秒可以发送';
+            var inter = window.setInterval(function () {
+                s--;
+                btn.innerHTML = '还剩' + String(s) + '秒可以发送';
+                // 是否可以继续点击
+                if (s <= 0) {
+                    btn.disabled = false;
+                    clearInterval(inter);
+                    btn.innerHTML = '发送';
+                }
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>

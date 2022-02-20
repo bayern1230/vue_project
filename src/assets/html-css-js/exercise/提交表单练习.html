@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            //全选按钮
+            let checkAllButton = document.getElementById("checkAllButton");
+            checkAllButton.onclick = function(){
+                var items = document.getElementsByName("items");
+                for(i=0;i<items.length;i++)
+                {
+                    items[i].checked = true;
+                }
+            };
+            //全不选按钮
+            let notCheckAllButton = document.getElementById("notCheckAllButton");
+            notCheckAllButton.onclick = function(){
+                var items = document.getElementsByName("items");
+                for(i=0;i<items.length;i++)
+                {
+                    items[i].checked = false;
+                }
+            };
+            //反选
+            let convertCheckButton = document.getElementById("convertCheckButton");
+            convertCheckButton.onclick = function(){
+                var items = document.getElementsByName("items");
+                for(i=0;i<items.length;i++)
+                {
+                    items[i].checked = !items[i].checked;
+                }
+            };
+            //提交
+            let submitButton = document.getElementById("submitButton");
+            submitButton.onclick = function(){
+                var items = document.getElementsByName("items");
+                let str = '';
+                for(i=0;i<items.length;i++)
+                {
+                    if(items[i].checked)
+                    {
+                        str = str + String(items[i].value)+'   ';
+                    }
+                }
+                alert(str);
+            };
+        };
+    </script>
+</head>
+<body>
+    <form method="post" action="">
+        你爱好的运动是：<input type="checkbox">全选/全不选
+        <br>
+        <input type="checkbox" name="items" value="足球">足球
+        <input type="checkbox" name="items" value="篮球">篮球
+        <input type="checkbox" name="items" value="羽毛球">羽毛球
+        <input type="checkbox" name="items" value="乒乓球">乒乓球
+        <br>
+        <input type="button" id="checkAllButton" value="全选">
+        <input type="button" id="notCheckAllButton" value="全不选">
+        <input type="button" id="convertCheckButton" value="反选">
+        <input type="button" id="submitButton" value="提交">
+    </form>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        li {
+            color: gray;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #3e7fa5;
+            size: 20px;
+        }
+
+        a.link-hover:hover {
+            color: skyblue;
+        }
+
+        a.link-hover:active {
+            color: blueviolet;
+        }
+
+        /* 伪元素 */
+        h2::first-letter,
+        h3::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        .after-test::after {
+            content: "我是通过CSS添加的内容";
+            color: red;
+        }
+
+        /* 继承 */
+        .yangshijicheng {
+            color: greenyellow;
+        }
+
+        /*盒子模型*/
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            /* 边框 */
+            border-width: 10px;
+            border-color: black;
+            border-style: solid;
+            /*外边距padding*/
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .inner {
+            width: 100%;
+            height: 100%;
+            background-color: green;
+        }
+
+        .box1 {
+            background-color: #bfa;
+            width: 50px;
+            height: 50px;
+            border: 10px solid;
+            border-color: blue;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        /* 浮动 */
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border: 10px blue solid;
+            background-color: yellowgreen;
+        }
+
+        /* 导航栏 */
+        .nav {
+            width: 1200px;
+            height: 50px;
+            background-color: #E8E7E3;
+            margin: 100px auto;
+        }
+
+        /* 导航栏中的li */
+        .nav li {
+            float: left;
+            list-style: none;
+            /* 设置高度 */
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .nav li a {
+            /* a转换为块元素 */
+            display: block;
+            /* 去掉下划线 */
+            text-decoration: none;
+            color: #777777;
+            /* 内边距 */
+            padding: 0 50px;
+        }
+
+        .nav li a:hover {
+            /* 背景颜色 */
+            background-color: #3F3F3F;
+            /* 字体颜色 */
+            color: #E8E7E3;
+        }
+
+        /* 简单布局 */
+        #p63-header,
+        #p63-main,
+        #p63-footer {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 头部 */
+        #p63-header {
+            height: 120px;
+            background-color: blueviolet;
+            margin-bottom: 20px;
+        }
+
+        /* 主体 */
+        #p63-main {
+            height: 500px;
+            background-color: #bfa;
+            margin-bottom: 20px;
+        }
+
+        #p63-main-1,
+        #p63-main-2,
+        #p63-main-3 {
+            float: left;
+            height: 80%;
+            width: 300px;
+            background-color: orange;
+            margin: 50px 50px;
+        }
+
+        /* 底部 */
+        #p63-footer {
+            height: 100px;
+            background-color: cadetblue;
+        }
+
+        /* 高度塌陷 */
+        .box3 {
+            border: 10px black solid;
+        }
+
+        /* 定位 */
+        .box4 {
+            position: relative;
+            bottom: 100px;
+            left: 300px;
+            width: 200px;
+            height: 200px;
+            border: 5px black solid;
+        }
+
+        /* 元素层级 */
+        .z-box {
+            position: relative;
+        }
+
+        .z-box-1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            position: absolute;
+            z-index: 3;
+        }
+
+        .z-box-2 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .z-box-3 {
+            width: 200px;
+            height: 200px;
+            background-color: blanchedalmond;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+
+        /* 轮播图 */
+        .picture-list-z {
+            position: static;
+        }
+
+        .picture-list-z li {
+            position: relative;
+            left: 600px;
+            list-style: none;
+        }
+
+        .picture-list-z-point a {
+            float: left;
+            position: relative;
+            top: 0;
+            left: 50%;
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            z-index: 9999;
+            margin: 0 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#bottom">去底部</a>
+    <h2>转义字符</h2>
+    <p>&nbsp;空格</p>
+    <p>&lt;小于号</p>
+    <p>&gt;大于号</p>
+    <hgroup>标题组</hgroup>
+    <em>语气加重</em>
+    <strong>强调</strong>
+    <blockquote>长引用</blockquote>
+    <q>短引用</q>
+    <!--
+        <header>:头部
+        <main>:主体
+        <footer>:底部
+    -->
+    <h2>列表</h2>
+    <ul>
+        <li>ol:有序列表</li>
+        <li>ul:无序列表</li>
+        <li>dl:定义列表</li>
+    </ul>
+    <h2>超链接</h2>
+    <a href="https://www.baidu.com">百度</a>
+    <p>./当前目录<br>../上一级目录</p>
+    <p>target属性：-self:默认</p>
+    <p>target属性：-blank:新建页面</p>
+    <a href="javascript:;">占位超链接，什么也不做</a>
+    <img src="../logo.png" alt="对图片的描述">
+    <!--width/height宽高-->
+    <h2>元素选择器</h2>
+    <p>p{} div{}... 元素选择器</p>
+    <p>id选择器:#id{}</p>
+    <p>class类选择器:.class{} , 可以一个元素同时带有多个类</p>
+    <p>*通配选择器：*{}</p>
+    <p>交集选择器:&nbsp;p.class{}</p>
+    <p>并集选择器：h1,span{}</p>
+    <p>属性选择器：p[title]{} <br />
+        [属性名=属性值]{}<br />
+        [属性名 ^= 属性值]{} ： 以...开头的元素<br />
+        [属性名 $= 属性值]{} ： 以...结尾的元素<br />
+        [属性名 *= 属性值]{} ： 含有...的元素<br />
+    </p>
+    <p>选择兄弟元素:p+span{}&nbsp;&nbsp;p + .intro选择每个直接跟在 a后面的class="intro"的元素&lt;p&gt;</p>
+    <p>A~B:选择A类后面所有的B类</p>
+    <h2>伪类</h2>
+    <p>:xxx -- 伪类:用来描述元素的特殊状态，比如第一个元素，比如被选中的元素，比如鼠标移入的元素<br />
+        :first-child :last-child :nth-child(n) n属于0-无穷 -- 选择第几个子元素<br>
+        ::xxx -- 伪元素<br>
+        orange:first-child -- 选择第一个orange标签
+    </p>
+    <p>a:link{} -- 没有访问的链接（正常的链接）<a href="http://www.baidu.com" target="_blank">没有访问过的链接</a><br>
+        a:visited{} -- 已经访问过的链接<a href="http://www.baidu.com" target="_blank">访问过的链接</a>
+        <strong>由于隐私的原因，访问过的网页只能修改颜色</strong><br>
+        a:hover{} -- 表示鼠标移入的状态<a class="link-hover" href="javascript:;">移入变色</a><br>
+        a:active{} -- 鼠标点击状态
+    </p>
+    <h2>伪元素</h2>
+    <p>伪元素：表示页面中并不存在的特殊元素&nbsp;</p>
+    <p>::first-letter -- 表示第一个字符&nbsp;&nbsp;
+        ::first-line -- 表示第一行&nbsp;&nbsp;
+        ::seleciton -- 表示选中的元素</p>
+    <p class="after-test">::before & ::after 为元素前面或后面，需要搭配content使用</p>
+    <h2>餐厅练习</h2><span>https://flukeout.github.io/#</span>
+    <h2>样式继承</h2>
+    <p>元素样式会应用到它的后代元素身上</p>
+    <p class="yangshijicheng">这是一个P元素，<span>这是p元素中的span元素</span></p>
+    <p>需注意：并不是所有的样式都会被继承，比如背景相关、布局相关</p>
+    <h2>选择器的权重</h2>
+    <p>
+    <ol>
+        <li>发生样式冲突时，由选择器的权重决定<br></li>
+        <li>内联样式 id选择器 类和伪类选择器 元素选择器 通配选择器(*) 继承<br></li>
+        <li>比较时，需要将所有的选择器的优先级相加计算（分组选择器会单独计算）<br></li>
+        <li>如果优先级相同，优先选择靠下的选择器（后面的覆盖前面的）<br></li>
+        <li>!important 会使得该样式优先级最高
+        </li>
+    </ol>
+    </p>
+    <h2>长度单位</h2>
+    <ol>
+        <li>像素：同一个像素在不同屏幕下设置的大小会不一样</li>
+        <li>百分比：使得子元素随父元素变化</li>
+        <li>em:相对于字体大小计算<br><b>1em=1font-size</b></li>
+        <li>rem:相对于根元素的字体大小计算</li>
+    </ol>
+    <h2>颜色</h2>
+    <p>RGB</p>
+    <p>HSL
+    <ol>
+        <li>H:色相 0-360</li>
+        <li>S:饱和度 0%-100%</li>
+        <li>L:亮度 0%-100%</li>
+    </ol>
+    </p>
+    <h2>布局</h2>
+    <p>文档流(normal flow):网页是一个多层结构，通过CSS可以为每一层设置一个样式，用户只能看到最顶上的一层<br>
+        这些层中，最底下的一层称为文档流<br>
+        元素在文档流和不在文档流是两种不同的状态</p>
+    <p>块元素：
+    <ul>
+        <li>在页面中独占一行</li>
+        <li>默认宽度为父元素的全部宽度</li>
+        <li>默认高度为子元素撑开</li>
+    </ul>
+    行内元素:
+    <ul>
+        <li>行内元素不会独占一行</li>
+        <li>行内元素自左向右水平排列</li>
+        <li>行内元素的默认宽度和高度都是被内容撑开</li>
+    </ul>
+    </p>
+    <h2>盒子模型(box model)</h2>
+    <p>
+    <ul>
+        <li>内容区(content)</li>
+        <li>内边距(padding)</li>
+        <li>边框(border)</li>
+        <li>外边距(margin)</li>
+    </ul>
+    </p>
+    <div class="box">
+        <div class="inner">内容区</div>
+    </div>
+    <p>width 设置内容区的宽度，height 设置内容区的高度</p>
+    <h3>外边距</h3>
+    <ul>
+        <li>border-width 边框宽度
+            <span style="color: rgb(65, 47, 47);">border-xxx-width 可以分别为上下左右设置边框</span>
+        </li>
+        <li>border-color 边框颜色</li>
+        <li>border-style 边框样式
+            <ul>
+                <li>solid:实线</li>
+                <li>dotted:点状虚线</li>
+                <li>dashed:线状虚线</li>
+                <li>double:双线</li>
+            </ul>
+        </li>
+    </ul>
+    <p>盒子的可见框大小由content+padding+border大小决定</p>
+    <p>外边距会影响元素的位置，<b>可以设置为负值使其向相反的方向移动</b></p>
+    <p class="gongshi">margin-left+border-left+padding-left+width+padding-right+border-right+margain-right = 父元素内容区宽度
+    </p>
+    <p> 如果上式不成立，则称为<b>过度约束</b><br>
+        如果没有auto的情况，则会自动添加margin-right,如果有auto，则会自动调整auto对应的值<br>
+        经常利用这一点使得在父元素中内容居中<br>
+        <span>实例：width:xxpx;margin:0 auto</span>
+    </p>
+    <h3>溢出</h3>
+    <p>如果子元素在父元素中溢出，则使用overflow处理溢出的情况
+    <ul>
+        <li>visible:默认值，可见</li>
+        <li>hidden:溢出部分会被裁剪</li>
+        <li>scroll:滚动条</li>
+        <li>auto:根据需要生成滚动条 </li>
+    </ul>
+    </p>
+    <h3>外边距的折叠</h3>
+    <p>相邻的垂直方向外边距会发生重叠现象<br>
+        兄弟元素间的相邻垂直外边距会取两者之间的较大值(绝对值)<br>
+        如果一正一负，取两者之和<br>
+    </p>
+    <p>父子元素的相邻外边距，子元素会传递给父元素</p>
+    <h3>行内元素的盒模型</h3>
+    <p>行内元素不支持设置宽度和高度</p>
+    <p>行内元素可以设置padding和border,但是垂直方向不会影响布局</p>
+    <h3>display & visibility</h3>
+    <p>display:设置元素显示的类型
+    <ul>可选值：
+        <li>inline:将元素设置为行内元素</li>
+        <li>block:将元素设置为块元素</li>
+        <li>inline-block:行内块元素,既可以设置高度和宽度，又不会独占一行</li>
+        <li>table:将元素设置为一个表格</li>
+        <li>none:元素不在页面中显示</li>
+    </ul>
+    </p>
+    <p>visibility:用来显示元素的状态
+    <ul>
+        <li>visible:默认值，正常显示</li>
+        <li>hidden:隐藏，但是依然占据位置</li>
+    </ul>
+    </p>
+    <h3>浏览器的默认样式</h3>
+    <p>body{margin:0;} 去除浏览器body默认样式</p>
+    <p>ul{
+        margin:0;<br>
+        padding:0;<br>
+        list-style:none; //去除列表前方圆形标识<br>
+        }</p>
+    <p>通配：*{margin:0;padding:0;}</p>
+    <p>重置样式表:</p>
+    <p>reset.css:直接去除浏览器样式</p>
+    <p>normalize.css:对默认样式进行统一</p>
+    <p>box-sizing:宽度和高度作用的对象</p>
+    <h3>轮廓和阴影</h3>
+    <div class="box1">轮廓</div>
+    <p>outline:用来设置元素的轮廓线，<br>和边框不同的点为它不会改变布局，不会影响可见框的大小</p>
+    <p>box-shadow:用来设置元素的阴影效果，并配合位置偏移使用<br>
+        示例：box-shadow:10px 10px 10px black;<br>
+        分别为水平偏移量、垂直偏移量、模糊半径、颜色</p>
+    <p>border-radius:xxpx; 用来设置圆角</p>
+    <h2>浮动</h2>
+    <p>通过浮动可以使一个元素在其父元素之内左右移动</p>
+    <div class="box2"></div>
+    <p>用float属性设置元素浮动
+    <ul>
+        <li>none:默认值，不浮动</li>
+        <li>left:向左浮动</li>
+        <li>right:向右浮动</li>
+    </ul>
+    </p>
+    <p><em>注意：设置浮动之后水平布局的等式不需要强制成立</em></p>
+    <p><b>元素设置浮动之后，会完全从文档流脱离</b></p>
+    <p>浮动的特点:
+    <ol>
+        <li>浮动元素会完全脱离文档流</li>
+        <li>设置浮动以后元素会向父元素的左侧或者右侧移动</li>
+        <li>浮动元素默认不会从父元素中移出</li>
+        <li>浮动元素左右移动时，不会遮盖住其他的浮动元素</li>
+        <li>如果浮动元素上面是一个没有浮动的元素，则浮动元素无法上移</li>
+        <li>浮动元素不会超过它上边的浮动的兄弟元素</li>
+        <li>浮动元素不会盖住文字，文字会自动环绕在浮动元素周边</li>
+    </ol>
+    脱离文档流的特点:
+    <ol>
+        <li>块元素不再独占文档一行</li>
+        <li>宽度和高度默认被内容撑开</li>
+        <li>行内元素浮动之后特性与块元素相同</li>
+    </ol>
+    </p>
+    <h3>创建导航条的结构</h3>
+    <ul class="nav">
+        <li>
+            <a href="#">导航1</a>
+        </li>
+        <li>
+            <a href="#">导航2</a>
+        </li>
+        <li>
+            <a href="#">导航3</a>
+        </li>
+        <li>
+            <a href="#">导航4</a>
+        </li>
+    </ul>
+    <h2>简单布局</h2>
+    <div id="p63-header"></div>
+    <div id="p63-main">
+        <div id="p63-main-1"></div>
+        <div id="p63-main-2"></div>
+        <div id="p63-main-3"></div>
+    </div>
+    <div id="p63-footer"></div>
+    <h2>高度塌陷</h2>
+    <p>一般父元素高度不会写死，会随着内容的变化而变化</p>
+    <div class="box3"></div>
+    <p>在浮动布局中，父元素高度默认是被子元素撑开的，当子元素浮动后，会完全脱离文档流
+        将会无法撑起父元素，导致父元素丢失<br>
+        父元素高度丢失之后，会导致下面元素跟着上移，导致页面布局混乱</p>
+    <h3>BFC(block formatting context)--块级格式化环境 </h3>
+    <p>BFC是CSS中的一个隐含属性，开启之后该元素会变成一个独立的布局区域</p>
+    <p>元素开启BFC的特点
+    <ul>
+        <li>开启BFC的元素不会被浮动元素所覆盖</li>
+        <li>开启BFC的元素子元素和父元素外边距不会重叠</li>
+        <li>开启BFC的元素可以包含浮动的子元素</li>
+    </ul>
+    </p>
+    <p>常用方式：为元素设置overflow:hidden</p>
+    <h2>定位</h2>
+    <p>positon:
+    <ul>
+        <li>static:默认值，元素静止，没有开启定位</li>
+        <li>relative:元素的相对定位</li>
+        <li>absolute:元素的绝对定位</li>
+        <li>fixed:元素的固定定位</li>
+        <li>sticky:元素的粘滞定位</li>
+    </ul>
+    </p>
+    <h3>相对定位(positon:relative)</h3>
+    <div class="box4"></div>
+    <p>元素开启相对定位之后，若不设置偏移量，元素不会发生任何变化</p>
+    <h3>绝对定位</h3>
+    <p>开启绝对定位之后，元素会从文档流中脱离</p>
+    <p>行内变成块，宽高被内容撑开</p>
+    <p><b>包含块:</b><br>默认情况下，包含块即离它最近的祖先元素<br>
+        绝对定位的包含块：离它最近的开启了定位的祖先元素</p>
+    <h3>元素层级</h3>
+    <p>对于开启了定位的元素，可以通过z-index指定元素的层级,z-index需要一个整数参数，值越大，层级越高</p>
+    <p>祖先元素不会盖住后代元素</p>
+    <div class="z-box">
+        <div class="z-box-1"></div>
+        <div class="z-box-2"></div>
+        <div class="z-box-3"></div>
+    </div>
+    <h2>轮播图</h2>
+    <ul class="picture-list-z">
+        <li><a href="javascript:;"><img src="./exercise/picture/1.png" alt="picture"></a></li>
+        <li><a href="javascript:;"><img src="./exercise/picture/2.jpg" alt="picture"></a></li>
+        <li><a href="javascript:;"><img src="./exercise/picture/3.png" alt="picture"></a></li>
+
+        <div class="picture-list-z-point">
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+
+    </ul>
+
+
+
+    <a id="bottom" href="#">回到顶部</a>
+</body>
+
+</html>
