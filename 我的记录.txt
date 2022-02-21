@@ -1,3 +1,8 @@
+#git 远程提交方式
+git add . 
+git commit -m "提交内容简介"
+git push origin
+
  # 打开方式
 App running at:
   - Local:   http://localhost:8081/
@@ -23,3 +28,7 @@ P84 全局事件组件:任意组件通信
 
 路由：key-value对应关系 实现SPA single page web application
       key:路径 value:函数/组件 P117-18:48
+
+el布局:
+栅格布局：el-row :gutter--行内元素间距
+        el-col :span--元素宽度

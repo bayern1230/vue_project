@@ -21,8 +21,20 @@
             text-color="#fff"
             active-text-color="#ffd04b"
             :router="true"
-            style="border-right:none;" 
+            style="border-right: none"
           >
+            <el-menu-item index="/welcome">
+              <i class="el-icon-menu"></i>
+              <span slot="title">欢迎界面</span>
+            </el-menu-item>
+            <el-menu-item index="/search" >
+              <i class="el-icon-document"></i>
+              <span slot="title">搜索功能</span>
+            </el-menu-item>
+            <el-menu-item index="4">
+              <i class="el-icon-setting"></i>
+              <span slot="title">导航四</span>
+            </el-menu-item>
             <!-- 一级菜单 -->
             <el-submenu index="1">
               <!-- 模板 -->
@@ -46,18 +58,6 @@
                 <el-menu-item index="1-4-1">选项1</el-menu-item>
               </el-submenu>
             </el-submenu>
-            <el-menu-item index="/welcome">
-              <i class="el-icon-menu"></i>
-              <span slot="title">搜索文章</span>
-            </el-menu-item>
-            <el-menu-item index="3" disabled>
-              <i class="el-icon-document"></i>
-              <span slot="title">导航三</span>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <i class="el-icon-setting"></i>
-              <span slot="title">导航四</span>
-            </el-menu-item>
           </el-menu>
         </el-aside>
         <el-container>
@@ -76,6 +76,7 @@
 <script>
 export default {
   name: "ElementUi",
+  components: {},
 };
 </script>
 
