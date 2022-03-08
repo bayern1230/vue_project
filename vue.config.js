@@ -10,7 +10,7 @@ module.exports = {
     // 添加一个代理服务器(方式二)
     proxy: {
       '/api': {
-        target: 'http://localhost:8000', // API服务器的地址
+        target: 'http://localhost:9080', // API服务器的地址
         changeOrigin: true,
         pathRewrite: {
           '^/api': '' //正则表达式替换

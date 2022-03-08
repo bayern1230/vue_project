@@ -1,0 +1,213 @@
+{
+    "data": {
+        "status": "ok",
+        "items": [
+            {
+                "lastQueryKey": "6",
+                "currentPage": "1",
+                "term": "good"
+            },
+            {
+                "title": "Erratum: Caroline Good; et al.; A Cultural Conscience for Conservation. Animals 2017, 7, 52",
+                "href": "/pmc/articles/PMC5575570/",
+                "author": "Caroline Good, Dawn Burnham, David W. Macdonald",
+                "details": "Animals (Basel) 2017 Aug; 7(8): 58.  Published online 2017 Aug 4. doi: 10.3390/ani7080058Corrects: Animals (Basel). 2017 Jul; 7(7): 52. ",
+                "PMCID": "PMC5575570"
+            },
+            {
+                "title": "The History of In Vivo Tuberculin Testing in Bovines: Tuberculosis, a “One Health” Issue",
+                "href": "/pmc/articles/PMC5900347/",
+                "author": "Margaret Good, Douwe Bakker, Anthony Duignan, Daniel M. Collins",
+                "details": "Front Vet Sci. 2018; 5: 59.  Published online 2018 Apr 9. doi: 10.3389/fvets.2018.00059",
+                "PMCID": "PMC5900347"
+            },
+            {
+                "title": "Controlled Infection Immunization Using Delayed Death Drug Treatment Elicits Protective Immune Responses to Blood-Stage Malaria Parasites",
+                "href": "/pmc/articles/PMC6300636/",
+                "author": "Leanne M. Low, Aloysious Ssemaganda, Xue Q. Liu, Mei-Fong Ho, Victoria Ozberk, James Fink, Lana Sundac, Kylie Alcorn, Amy Morrison, Kevin O’Callaghan, John Gerrard, Danielle I. Stanisic, Michael F. Good",
+                "details": "Infect Immun. 2019 Jan; 87(1): e00587-18.  Prepublished online 2018 Oct 15. Published online 2018 Dec 19. doi: 10.1128/IAI.00587-18",
+                "PMCID": "PMC6300636"
+            },
+            {
+                "title": "High-mobility group box 1 inhibits HCO3− absorption in the medullary thick ascending limb through RAGE-Rho-ROCK-mediated inhibition of basolateral Na+/H+ exchange",
+                "href": "/pmc/articles/PMC5142168/",
+                "author": "Bruns A. Watts, III, Thampi George, Andrew Badalamenti, David W. Good",
+                "details": "Am J Physiol Renal Physiol. 2016 Sep 1; 311(3): F600–F613.  Published online 2016 Jun 29. doi: 10.1152/ajprenal.00185.2016",
+                "PMCID": "PMC5142168"
+            },
+            {
+                "title": "Tissue Quality Assessment Using a Novel Direct Elasticity Assessment Device (The E-Finger): A Cadaveric Study of Prostatectomy Dissection",
+                "href": "/pmc/articles/PMC4226612/",
+                "author": "Daniel W. Good, Ashfaq Khan, Steven Hammer, Paul Scanlan, Wenmiao Shu, Simon Phipps, Simon H. Parson, Grant D. Stewart, Robert Reuben, S. Alan McNeill",
+                "details": "PLoS One. 2014; 9(11): e112872.  Published online 2014 Nov 10. doi: 10.1371/journal.pone.0112872",
+                "PMCID": "PMC4226612"
+            },
+            {
+                "title": "An Index to Objectively Score Supraglottic Abnormalities in Refractory Asthma: Learning, Validation, and Significance",
+                "href": "/pmc/articles/PMC3941246/",
+                "author": "James T. Good, Jr, Donald R. Rollins, Douglas Curran-Everett, Steven E. Lommatzsch, Brendan J. Carolan, Peter C. Stubenrauch, Richard J. Martin",
+                "details": "Chest. 2014 Mar; 145(3): 486–491.  Published online 2013 Nov 7. doi: 10.1378/chest.13-1455",
+                "PMCID": "PMC3941246"
+            },
+            {
+                "title": "IL-33 and the Intestine: The Good, the Bad, and the Inflammatory",
+                "href": "/pmc/articles/PMC5650929/",
+                "author": "Zerina Hodzic, Ellen Merrick Schill, Alexa M. Bolock, Misty Good",
+                "details": "Cytokine. Author manuscript; available in PMC 2018 Dec 1.Published in final edited form as: Cytokine. 2017 Dec; 100: 1–10. Published online 2017 Jul 4. doi: 10.1016/j.cyto.2017.06.017",
+                "PMCID": "PMC5650929"
+            },
+            {
+                "title": "High-mobility group box 1 inhibits HCO3− absorption in medullary thick ascending limb through a basolateral receptor for advanced glycation end products pathway",
+                "href": "/pmc/articles/PMC4609918/",
+                "author": "David W. Good, Thampi George, Bruns A. Watts, III",
+                "details": "Am J Physiol Renal Physiol. 2015 Oct 15; 309(8): F720–F730.  Published online 2015 Jul 15. doi: 10.1152/ajprenal.00227.2015",
+                "PMCID": "PMC4609918"
+            },
+            {
+                "title": "New Insights into Ligand-Receptor Pairing and Coevolution of Relaxin Family Peptides and Their Receptors in Teleosts",
+                "href": "/pmc/articles/PMC3449138/",
+                "author": "Sara Good, Sergey Yegorov, Joran Martijn, Jens Franck, Jan Bogerd",
+                "details": "Int J Evol Biol. 2012; 2012: 310278.  Published online 2012 Sep 13. doi: 10.1155/2012/310278Correction in: Int J Evol Biol. 2013; 2013: 807326. ",
+                "PMCID": "PMC3449138"
+            },
+            {
+                "title": "Optimized S-Trityl-l-cysteine-Based\nInhibitors of Kinesin Spindle Protein\nwith Potent in Vivo Antitumor Activity in Lung Cancer Xenograft Models",
+                "href": "/pmc/articles/PMC3759169/",
+                "author": "James A. D. Good, Fang Wang, Oliver Rath, Hung Yi Kristal Kaan, Sandeep\nK. Talapatra, Dawid Podgórski, Simon P. MacKay, Frank Kozielski",
+                "details": "J Med Chem. 2013 Mar 14; 56(5): 1878–1893.  Published online 2013 Feb 11. doi: 10.1021/jm3014597",
+                "PMCID": "PMC3759169"
+            },
+            {
+                "title": "Olfactory function in psychotic disorders: Insights from neuroimaging studies",
+                "href": "/pmc/articles/PMC4473492/",
+                "author": "Kimberley P Good, Randii Lynn Sullivan",
+                "details": "World J Psychiatry. 2015 Jun 22; 5(2): 210–221.  Published online 2015 Jun 22. doi: 10.5498/wjp.v5.i2.210",
+                "PMCID": "PMC4473492"
+            },
+            {
+                "title": "Molecular Evolution across Mouse Spermatogenesis",
+                "href": "/pmc/articles/PMC8844503/",
+                "author": "Emily E K Kopania, Erica L Larson, Colin Callahan, Sara Keeble, Jeffrey M Good",
+                "details": "Mol Biol Evol. 2022 Feb; 39(2): msac023.  Published online 2022 Jan 31. doi: 10.1093/molbev/msac023",
+                "PMCID": "PMC8844503"
+            },
+            {
+                "title": "The Legacy of Recurrent Introgression during the Radiation of Hares",
+                "href": "/pmc/articles/PMC8048390/",
+                "author": "Mafalda S Ferreira, Matthew R Jones, Colin M Callahan, Liliana Farelo, Zelalem Tolesa, Franz Suchentrunk, Pierre Boursot, L Scott Mills, Paulo C Alves, Jeffrey M Good, José Melo-Ferreira",
+                "details": "Syst Biol. 2021 May; 70(3): 593–607.  Published online 2020 Dec 2. doi: 10.1093/sysbio/syaa088",
+                "PMCID": "PMC8048390"
+            },
+            {
+                "title": "Computational and Systems Immunology: A Student’s Perspective",
+                "href": "/pmc/articles/PMC7035103/",
+                "author": "Zinaida Good, Jacob Glanville, Marvin H. Gee, Mark M. Davis, Purvesh Khatri",
+                "details": "Trends Immunol. Author manuscript; available in PMC 2020 Feb 21.Published in final edited form as: Trends Immunol. 2019 Aug; 40(8): 665–668. Published online 2019 Jul 6. doi: 10.1016/j.it.2019.06.006",
+                "PMCID": "PMC7035103"
+            },
+            {
+                "title": "God will forgive: reflecting on God’s love decreases neurophysiological responses to errors",
+                "href": "/pmc/articles/PMC4350493/",
+                "author": "Marie Good, Michael Inzlicht, Michael J. Larson",
+                "details": "Soc Cogn Affect Neurosci. 2015 Mar; 10(3): 357–363.  Published online 2014 Jul 25. doi: 10.1093/scan/nsu096",
+                "PMCID": "PMC4350493"
+            },
+            {
+                "title": "CGHS Black Hole Analog Moving Mirror and Its Relativistic Quantum Information as Radiation Reaction",
+                "href": "/pmc/articles/PMC8700335/",
+                "author": "Aizhan Myrzakul, Chi Xiong, Michael R. R. Good",
+                "details": "Entropy (Basel) 2021 Dec; 23(12): 1664.  Published online 2021 Dec 10. doi: 10.3390/e23121664",
+                "PMCID": "PMC8700335"
+            },
+            {
+                "title": "The Composite Regulatory Basis of the Large X-Effect in Mouse\nSpeciation",
+                "href": "/pmc/articles/PMC6200130/",
+                "author": "Erica L. Larson, Sara Keeble, Dan Vanderpool, Matthew D. Dean, Jeffrey M. Good",
+                "details": "Mol Biol Evol. 2017 Feb; 34(2): 282–295.  Published online 2016 Dec 26. doi: 10.1093/molbev/msw243",
+                "PMCID": "PMC6200130"
+            },
+            {
+                "title": "Understanding Plant Nitrogen Metabolism through Metabolomics and Computational Approaches",
+                "href": "/pmc/articles/PMC5198099/",
+                "author": "Perrin H. Beatty, Matthias S. Klein, Jeffrey J. Fischer, Ian A. Lewis, Douglas G. Muench, Allen G. Good",
+                "details": "Plants (Basel) 2016 Dec; 5(4): 39.  Published online 2016 Oct 10. doi: 10.3390/plants5040039",
+                "PMCID": "PMC5198099"
+            },
+            {
+                "title": "The Evolution of Polymorphic Hybrid Incompatibilities in House Mice",
+                "href": "/pmc/articles/PMC6028243/",
+                "author": "Erica L. Larson, Dan Vanderpool, Brice A. J. Sarver, Colin Callahan, Sara Keeble, Lorraine L. Provencio, Michael D. Kessler, Vanessa Stewart, Erin Nordquist, Matthew D. Dean, Jeffrey M. Good",
+                "details": "Genetics. 2018 Jul; 209(3): 845–859.  Published online 2018 Apr 24. doi: 10.1534/genetics.118.300840",
+                "PMCID": "PMC6028243"
+            },
+            {
+                "title": "Optochemical Control of Protein Localization and Activity Within Cell-Like Compartments",
+                "href": "/pmc/articles/PMC7330991/",
+                "author": "Reese M. Caldwell, Jessica G. Bermudez, David Thai, Chanat Aonbangkhen, Benjamin S. Schuster, Taylor Courtney, Alexander Deiters, Daniel A. Hammer, David M. Chenoweth, Matthew C. Good",
+                "details": "Biochemistry. Author manuscript; available in PMC 2020 Jul 2.Published in final edited form as: Biochemistry. 2018 May 8; 57(18): 2590–2596. Published online 2018 Apr 19. doi: 10.1021/acs.biochem.8b00131",
+                "PMCID": "PMC7330991"
+            }
+        ],
+        "items_dropped": [],
+        "stats": {
+            "downloader/request_bytes": 5039,
+            "downloader/request_count": 1,
+            "downloader/request_method_count/GET": 1,
+            "downloader/response_bytes": 25166,
+            "downloader/response_count": 1,
+            "downloader/response_status_count/200": 1,
+            "elapsed_time_seconds": 5.99789,
+            "finish_reason": "finished",
+            "finish_time": "2022-03-08 08:52:48",
+            "httpcompression/response_bytes": 133499,
+            "httpcompression/response_count": 1,
+            "item_scraped_count": 21,
+            "log_count/DEBUG": 22,
+            "log_count/INFO": 9,
+            "response_received_count": 1,
+            "scheduler/dequeued": 1,
+            "scheduler/dequeued/memory": 1,
+            "scheduler/enqueued": 1,
+            "scheduler/enqueued/memory": 1,
+            "start_time": "2022-03-08 08:52:42"
+        },
+        "spider_name": "PMC"
+    },
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+        "access-control-allow-headers": "X-Requested-With",
+        "access-control-allow-methods": "GET, POST",
+        "access-control-allow-origin": "*",
+        "connection": "close",
+        "content-length": "9461",
+        "content-type": "application/json",
+        "date": "Tue, 08 Mar 2022 08:52:41 GMT",
+        "server": "TwistedWeb/22.1.0",
+        "x-powered-by": "Express"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "headers": {
+            "Accept": "application/json, text/plain, */*"
+        },
+        "method": "get",
+        "url": "http://localhost:8081/api/crawl.json?spider_name=PMC&start_requests=true&crawl_args={\"mode\":\"1\",\"term\":\"good\"}&"
+    },
+    "request": {}
+}
