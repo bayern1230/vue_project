@@ -107,8 +107,8 @@ export default {
 .el-main {
   background-color: #e9eef3;
   color: #333;
-  text-align: center;
-  height: 550px;
+  /* text-align: center; */
+  height: 580px;
 }
 
 .el-footer {
